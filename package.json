@@ -1,0 +1,20 @@
+{
+    "name": "parqet-prometheus-exporter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.21.4",
+      "express": "^4.17.1",
+      "node-cron": "^3.0.0",
+      "node-schedule": "^2.0.0",
+      "prom-client": "^14.0.0",
+      "puppeteer": "^10.2.0"
+    }
+  }
+  
