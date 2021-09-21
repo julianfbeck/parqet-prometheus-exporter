@@ -1,2 +1,2 @@
 # parqet-prometheus-exporter
-export basic parqet values for prometheus
+export basic parqet values for prometheus using puppeteer
