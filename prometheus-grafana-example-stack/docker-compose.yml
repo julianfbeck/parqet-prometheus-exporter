@@ -10,7 +10,13 @@ services:
     volumes:
       - ./grafana/grafana.ini:/etc/grafana/grafana.ini
       - ./grafana/datasource.yml:/etc/grafana/provisioning/datasources/datasource.yml
+      - ./grafana/provisioning/:/etc/grafana/provisioning/
     ports:
       - 3000:3000
     links:
       - prometheus
+  parqet-exporter:
+    build: ../
+    environment:
+      PASSWORD: ""
+      EMAIL: ""
