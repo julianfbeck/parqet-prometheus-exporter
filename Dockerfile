@@ -1,5 +1,5 @@
-FROM node:16-alpine
-RUN apk add --no-cache  chromium --repository=http://dl-cdn.alpinelinux.org/alpine/v3.9/main
+FROM node:16-alpine3.11
+RUN  apk --no-cache upgrade && apk add --no-cache chromium
 
 WORKDIR /usr/src/app
 
