@@ -8,7 +8,7 @@ const port = process.env.PORT || 3001;
 const metricsInterval = Prometheus.collectDefaultMetrics();
 let is_fetching = false;
 
-cron.schedule(" 0 */2 * * * *", async () => {
+cron.schedule(` 0 0 */${process.env.EVERY_HOUR} * * * *`, async () => {
   if (is_fetching) {
     console.log("already Fetching");
     return;

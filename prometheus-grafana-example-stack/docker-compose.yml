@@ -20,3 +20,4 @@ services:
     environment:
       PASSWORD: ""
       EMAIL: ""
+      EVERY_HOUR: "4"
